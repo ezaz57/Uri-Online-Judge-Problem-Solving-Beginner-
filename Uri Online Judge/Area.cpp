@@ -1,17 +1,21 @@
-#include<iostream>
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
+    // uncomment if you want to use cin cout for input output ( don't mix with scanf, printf ).
+     ios_base::sync_with_stdio(false);
+     cin.tie(NULL);
+     cout << fixed << setprecision(3);
 
-    double x,y,z;
-    cin>>x>>y>>z;
-    
-    cout<<"TRIANGULO: "<<fixed<<setprecision(3)<<x*z/2<<endl;
-    cout<<"CIRCULO: "<<fixed<<setprecision(3)<<3.14159*z*z<<endl;
-    cout<<"TRAPEZIO: "<<fixed<<setprecision(3)<<(x+y)/2*z<<endl;
-    cout<<"QUADRADO: "<<fixed<<setprecision(3)<<z*z<<endl;
-    cout<<"RETANGULO: "<<fixed<<setprecision(3)<<x*y<<endl;
-	return 0;
+     double a, b, c;
+     cin >> a >> b >> c;
 
+     cout << "TRIANGULO: "<< a*c/2  << "\n";
+     cout << "CIRCULO: "<< 3.14159*c*c  << "\n";
+     cout << "TRAPEZIO: "<< (a+b)/2*c << "\n";
+     cout << "QUADRADO: "<< b*b << "\n";
+     cout << "RETANGULO: "<< a*b << "\n";
+
+    return 0;
 }
